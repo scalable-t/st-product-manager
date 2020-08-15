@@ -2,6 +2,7 @@ package com.scalablet.spm.model.db;
 
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -10,8 +11,12 @@ import java.util.List;
  * @author abomb4 2020-08-10 01:30:26 +0800
  */
 @Data
-public class Table {
+public class Table implements Serializable {
 
+    private static final long serialVersionUID = -6075038032657766298L;
+
+    /** id */
+    private Long id;
     /** snake_case table name */
     private String tableCode;
     /** Localized table name */

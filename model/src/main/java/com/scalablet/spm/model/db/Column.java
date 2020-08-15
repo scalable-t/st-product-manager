@@ -2,13 +2,17 @@ package com.scalablet.spm.model.db;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * Column definition
  *
  * @author abomb4 2020-08-10 01:37:48 +0800
  */
 @Data
-public class Column {
+public class Column implements Serializable {
+
+    private static final long serialVersionUID = -7220424287993910443L;
     /** snake_case column name */
     private String columnCode;
     /** Column name localized */
