@@ -1,0 +1,137 @@
+html, body, body div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address,
+cite, code, del, dfn, em, img, ins, kbd, q, samp, small,
+strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer,
+header, menu, nav, section, time, mark, audio, video, details, summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 14px;
+}
+body {
+  background-color: #f9f9f9;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=- layout -=-=-=-=-=-=-=-=-=-=- */
+.navbar {
+  height: 60px;
+  background-color: #0044dd;
+  box-shadow: 0 0 10px black;
+  display: flex;
+}
+
+.navbar .logo-container {
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  padding: 0 12px;
+  width: 240px
+}
+.navbar .logo-container img {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  line-height: 60px;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+.navbar ul.nav {
+  list-style-type: none;
+  display: flex
+}
+.navbar .nav li {
+  margin-right: 4px;
+}
+.navbar .nav li a {
+  display: block;
+  padding: 0 15px;
+  height: 100%;
+  color: white;
+  line-height: 60px;
+  text-decoration: none;
+}
+.navbar .nav li:hover a {
+  background-color: rgba(255, 255, 255, .1);
+}
+.navbar .nav li:active a {
+  background-color: rgba(255, 255, 255, .2);
+}
+.navbar .nav li.active a {
+  background-color: rgba(255, 255, 255, .3);
+}
+/* -=-=-=-=-=-=-=-=-=-=- ! layout -=-=-=-=-=-=-=-=-=-=- */
+
+/* -=-=-=-=-=-=-=-=-=-=- components -=-=-=-=-=-=-=-=-=-=- */
+button.st-button {
+  padding: 6px 18px;
+  border: 1px solid #bbb;
+  background: #f9f9f9;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all .2s;
+}
+button.st-button:hover {
+  background: #fff;
+}
+button.st-button:disabled {
+  background: #ddd;
+}
+input.st-input {
+  outline: none;
+  border-radius: 5px;
+  display: block;
+  height: 28px;
+  border: 1px solid #aaa;
+  transition: all .2s;
+  width: 100%;
+}
+input.st-input:hover {
+  box-shadow: 0 0 3px #5af;
+}
+input.st-input:active, input.st-input:focus {
+  box-shadow: 0 0 3px #0063ff;
+}
+/* -=-=-=-=-=-=-=-=-=-=- ! components -=-=-=-=-=-=-=-=-=-=- */
+
+/* -=-=-=-=-=-=-=-=-=-=- form -=-=-=-=-=-=-=-=-=-=- */
+.st-form .st-form-item + .st-form-item {
+  margin-top: 12px;
+}
+.st-form .st-form-item label {
+  display: flex;
+}
+.st-form .st-form-item label span {
+  text-align: right;
+  width: 80px;
+  display: inline-block;
+  flex-shrink: 0;
+  flex-grow: 0;
+  line-height: 28px;
+}
+.st-form .st-form-item label input {
+  margin-left: 12px;
+}
+.st-form .st-form-item-buttons {
+  padding-left: 92px;
+}
+/* -=-=-=-=-=-=-=-=-=-=- ! form -=-=-=-=-=-=-=-=-=-=- */
+
+/* -=-=-=-=-=-=-=-=-=-=- login -=-=-=-=-=-=-=-=-=-=- */
+.login-square {
+  width: 400px;
+  margin: auto;
+  box-shadow: 0 0 4px #aaa;
+  padding: 24px;
+  margin-top: 20vh;
+}
+/* -=-=-=-=-=-=-=-=-=-=- ! login -=-=-=-=-=-=-=-=-=-=- */
